@@ -387,10 +387,14 @@ export default App
 ```
 ## CRUD Operations
 You can perform CRUD operations in React using Axios:
-HTTP Method	Action	Example
+HTTP Method	Action	
+### Example
 GET	Fetch data	axios.get('/users')
+
 POST	Add data	axios.post('/users', data)
+
 PUT	Update data	axios.put('/users/1', data)
+
 DELETE	Delete data	axios.delete('/users/1')
 
 **Ramakant Chaudhari**
