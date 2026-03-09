@@ -123,6 +123,10 @@ className="class_name"
 ```
 
 ## Variables in React
+In React, variables are used to store data that can change over time or vary between different environments. They can be broadly categorized into standard JavaScript variables, component-specific state variables, and application-wide environment variables. 
+1. const: Declares a variable that cannot be reassigned after its initial value is set. It is block-scoped. const is the preferred keyword for most cases in modern JavaScript and React.
+2. let: Declares a block-scoped variable that can be updated or reassigned later.
+3. var: Declares a function-scoped or globally scoped variable. It is generally avoided in modern React development in favor of let and const due to its less predictable scoping behavior
 ### Example:
 ```
 function App() {
@@ -159,6 +163,11 @@ export default App
 ```
 
 ## Event Handlers
+Event handlers in React are functions that manage user interactions like clicks, typing, and form submissions. They are added directly to JSX elements using camelCase naming conventions
+1. Mouse Events: onClick, onMouseEnter, onMouseLeave, onMouseDown, onMouseUp
+2. Form Events: onChange (for input changes), onSubmit (for form submission)
+3. Keyboard Events: onKeyDown, onKeyUp
+4. Focus Events: onFocus, onBlur
  ### Example:
  ```
 function App() {
@@ -194,6 +203,8 @@ export default App
 ## Props (Properties)
 Props are used to transfer data from parent component to child component.
 Parent → Child
+
+Props (short for properties) are a core concept in React used to pass data and configuration from a parent component to a child component. They are the primary mechanism for component communication and essential for creating dynamic and reusable user interfaces.
 ### Example project structure:
 src
  ├── child_folder
@@ -300,6 +311,15 @@ export default Child
 ```
 
  ## React Routing
+ React does not have built-in routing capabilities; instead, it relies on the popular third-party library React Router to manage navigation in Single Page Applications (SPAs). This library allows developers to map URLs to specific components without a full page reload, providing a seamless user experience.
+
+1. BrowserRouter: The recommended router for modern web applications. It uses the HTML5 History API to keep the UI in sync with the URL.
+2. Routes: A container component that holds all the individual route definitions. It selects and renders the best matching Route based on the current URL.
+3. Route: Defines a single route, mapping a path to a specific element (React component).
+4. Link / NavLink: Used instead of standard anchor (<a>) tags to navigate between different routes without triggering a full page refresh. NavLink provides additional styling attributes (like an isActive state) for active links.
+Outlet: Used for nested routing. It specifies where a child route's component should be rendered within its parent component's layout.
+5. useNavigate: A hook for programmatic navigation (e.g., redirecting a user after a login or form submission).
+6. useParams: A hook used to access dynamic segments of the URL (e.g., retrieving an id from a URL like /products/:id)
 ### Install React Router:
 ```
 npm install react-router-dom
