@@ -31,14 +31,23 @@
        my-app/
 
 node_modules : Contains all installed dependencies.
+
 public/ :Stores static assets.
+
 src/ :Contains components, pages, styles, hooks, and logic.
+
 static/ : Contains static files like images and fonts.
+
 App.jsx : Root component of the application.
+
 main.jsx : Entry point for React rendering.
+
 index.html : Main root HTML file.
+
 package.json : Lists project dependencies, scripts, and metadata.
+
 vite.config.js : Configuration file for Vite.
+
 README.md : Documentation for the project.
 
 ## React Components
