@@ -52,7 +52,9 @@ README.md : Documentation for the project.
 
 ## React Components
 •	Components are UI building blocks.
+
 •	A component is a JavaScript function that returns JSX.
+
 • JSX = HTML + JavaScript
 ### Example:
 ```
